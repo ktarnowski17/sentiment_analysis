@@ -1,7 +1,7 @@
 # 🎬 Sentiment Analysis of Movie Reviews
 
 This project focuses on sentiment analysis of movie reviews from the IMDB dataset.  
-The goal was to compare a simple machine learning approach with a pretrained transformer model.
+The goal was to automatically classify whether a movie review is positive or negative, using the IMDb dataset. I tested two approaches — a simple TF-IDF baseline and a pretrained DistilBERT — to find the best solution for this task."
 
 ---
 
