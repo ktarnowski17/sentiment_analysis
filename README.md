@@ -1,5 +1,7 @@
 # 🎬 Sentiment Analysis of Movie Reviews
 
+🚀 **[Live Demo](https://ktarnowski17-sentiment-analysis-app-egi7fm.streamlit.app)**
+
 This project focuses on sentiment analysis of movie reviews from the IMDB dataset.
 The goal was to automatically classify whether a movie review is positive or negative.
 I tested two approaches — a simple TF-IDF baseline and a pretrained DistilBERT — to find the best solution for this task.
@@ -68,17 +70,12 @@ I checked some incorrect predictions and noticed:
 
 ## 📂 Project Structure
 ```
-sentiment-analysis/
-├── notebooks/         ← main analysis notebook
-├── src/
-│   ├── preprocessing.py
-│   ├── models.py
-│   └── utils.py
-├── app.py             ← Streamlit web app
+sentiment_analysis/
+├── analizaopinii.ipynb  ← main analysis notebook
+├── app.py               ← Streamlit web app
 ├── requirements.txt
 └── README.md
 ```
-
 ---
 
 ## ⚙️ Tools and Libraries
