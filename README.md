@@ -1,6 +1,6 @@
 # 🎬 Sentiment Analysis of Movie Reviews
 
-🚀 **[Live Demo](https://ktarnowski17-sentiment-analysis-app-egi7fm.streamlit.app)**
+🚀 **[App link](https://ktarnowski17-sentiment-analysis-app-egi7fm.streamlit.app)**
 
 This project focuses on sentiment analysis of movie reviews from the IMDB dataset.
 The goal was to automatically classify whether a movie review is positive or negative.
