@@ -1,25 +1,75 @@
-# Sentiment Analysis on IMDb Reviews
+# 🎬 Sentiment Analysis of Movie Reviews
 
-## What is this project?
-This is a project where I analyzed movie reviews from IMDb and built models to predict whether a review is positive or negative.
+This project focuses on sentiment analysis of movie reviews from the IMDB dataset.  
+The goal was to compare a simple machine learning approach with a pretrained transformer model.
 
-## What I did
-- Explored the dataset (50,000 reviews) — checked class distribution, review lengths, most common words
-- Cleaned the text — removed HTML tags, punctuation, stopwords
-- Built two models and compared them:
-  - TF-IDF + Logistic Regression (simple and fast)
-  - DistilBERT (transformer-based, more advanced)
+---
 
-## Results
+## 📌 What I did
+
+In this project, I tested two different approaches:
+
+- Logistic Regression with TF-IDF
+- Pretrained DistilBERT model
+
+I wanted to see how a simple baseline compares to a more advanced NLP model.
+
+---
+
+## 🧠 Models
+
+### Logistic Regression + TF-IDF
+- basic text cleaning
+- removing stopwords
+- converting text into numerical features using TF-IDF
+- fast and simple model
+
+### DistilBERT (pretrained)
+- model: `distilbert-base-uncased-finetuned-sst-2-english`
+- used with Hugging Face pipeline
+- no additional training (only predictions)
+
+---
+
+## 📊 Results
+
 | Model | Accuracy | F1 Score |
-|-------|----------|----------|
-| Logistic Regression | 88.10% | 88.11% |
-| DistilBERT | 89.07% | 88.75% |
+|------|--------|---------|
+| Logistic Regression | 0.88 | 0.88 |
+| DistilBERT | 0.89 | 0.89 |
 
-Interesting finding — the simple model performs almost as well as the transformer, but trains in 30 seconds instead of 25 minutes. Both models struggled with sarcastic and mixed-sentiment reviews.
+### Observations:
+- DistilBERT performed slightly better
+- Logistic Regression is much faster and easier to use
+- Transformer model handles more complex sentences better
 
-## Tech used
-Python, pandas, scikit-learn, HuggingFace Transformers, matplotlib, wordcloud
+---
 
-## Dataset
-IMDb dataset from HuggingFace (25k train / 25k test)
+## 🔍 Error Analysis
+
+I checked some incorrect predictions and noticed:
+
+- Logistic Regression has problems with:
+  - sarcasm
+  - longer and more complex sentences
+- DistilBERT usually understands context better
+- both models struggle with mixed or unclear sentiment
+
+---
+
+## ⚙️ Tools and Libraries
+
+- Python
+- pandas, numpy
+- scikit-learn
+- transformers (Hugging Face)
+- matplotlib / seaborn
+
+---
+
+## 🚀 How to run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/sentiment-analysis.git
+cd sentiment-analysis
