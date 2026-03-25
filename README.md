@@ -1,7 +1,7 @@
 # Sentiment Analysis on IMDb Reviews
 
 ## What is this project?
-This is my second data science project where I analyzed movie reviews from IMDb and built models to predict whether a review is positive or negative.
+This is a project where I analyzed movie reviews from IMDb and built models to predict whether a review is positive or negative.
 
 ## What I did
 - Explored the dataset (50,000 reviews) — checked class distribution, review lengths, most common words
