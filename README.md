@@ -49,11 +49,13 @@ I wanted to see how a simple baseline compares to a more advanced NLP model.
 
 I checked some incorrect predictions and noticed:
 
-- Logistic Regression has problems with:
+- Logistic Regression struggles with:
   - sarcasm
   - longer and more complex sentences
-- DistilBERT usually understands context better
-- both models struggle with mixed or unclear sentiment
+
+- DistilBERT performed slightly better in some of these cases, although the overall difference between models is small
+
+- Both models struggle with mixed or unclear sentiment
 
 ---
 
